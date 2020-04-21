@@ -12,15 +12,16 @@ require_relative 'lib/event'
 # Tu peux faire User.new, Event.new, binding.pry, User.all, etc.
 julie = User.new("julie@gmail.com", 18)
 jean = User.new("jean@jean.com", 28)
-user_1 = User.new("claude@claude.com", 75)
+# user_1 = User.new("claude@claude.com", 75)
 
 
-puts "Voici l'age du User trouvé : #{user_1.age}" 
+# puts "Voici l'age du User trouvé : #{user_1.age}" 
 
 
-my_event = Event.new("2019-01-13 09:00", 10, "standup quotidien", [julie, jean])
-p my_event.title
+# my_event = Event.new("2019-01-13 09:00", 10, "standup quotidien", [julie, jean])
+meeting = WorkEvent.new("2019-01-17 09:00", 70, "réunion de travail", [julie, jean]) # je crée un WorkEvent
+# p my_event.title
 
-
+# my_event.age_analysis
 
 binding.pry
